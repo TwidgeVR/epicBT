@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    >
+	
+	<ScrollView
+		android:id="@+id/scrollcontainer"
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent"
+		android:layout_alignParentTop="true"
+		android:layout_above="@+id/btn_apply"
+		>
+
+		<LinearLayout
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:orientation="vertical"
+			>
+
+			<TextView
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginTop="10dp"
+				android:layout_marginLeft="10dp"
+				android:layout_marginRight="10dp"
+				android:text="This hotfix forces in-call audio to the device you specify below when the 3.5mm jack is plugged in. This will not change routing for other audio such as music playback."
+				/>
+
+			<TextView
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginTop="10dp"
+				android:layout_marginLeft="10dp"
+				android:layout_marginRight="10dp"
+				android:text="Note: applying changes may interrupt active audio streams"
+				/>
+			
+			<TextView
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginTop="10dp"
+				android:layout_marginLeft="10dp"
+				android:layout_marginRight="10dp"
+				android:text="USE *ONLY* ON THE SAMSUNG EPIC4G!!"
+				/>
+
+			<TextView
+				android:id="@+id/root_required"
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:textSize="20sp"
+				android:layout_marginTop="30dp"
+				android:text="Sorry, root access is required to utilize this app."
+				android:visibility="gone"
+				/>
+
+			<RadioGroup
+				android:id="@+id/select_group"
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginTop="10dp"
+				android:layout_marginLeft="10dp"
+				android:layout_marginRight="10dp"
+				>
+
+				<RadioButton
+					android:id="@+id/rbtn_default"
+					android:layout_width="fill_parent"
+					android:layout_height="wrap_content"
+					android:text="Wired Headset (default)"
+					/>
+				
+				<RadioButton
+					android:id="@+id/rbtn_bluetooth"
+					android:layout_width="fill_parent"
+					android:layout_height="wrap_content"
+					android:text="Bluetooth HS/HF"
+					/>
+				
+				<RadioButton
+					android:id="@+id/rbtn_spkrphone"
+					android:layout_width="fill_parent"
+					android:layout_height="wrap_content"
+					android:text="Speakerphone"
+					/>
+		
+			</RadioGroup>
+
+		</LinearLayout>
+	</ScrollView>
+
+	<Button
+		android:id="@+id/btn_disabled"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:layout_alignParentBottom="true"
+		android:gravity="center"
+		android:visibility="gone"
+		android:text="Quit"
+		/>
+
+	<Button
+		android:id="@+id/btn_apply"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:layout_alignParentBottom="true"		
+		android:layout_marginBottom="10dp"
+		android:gravity="center"
+		android:text="Apply"
+		/>
+<!--
+	<Button
+		android:id="@+id/btn_defaults"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:layout_alignParentBottom="true"
+		android:layout_marginBottom="10dp"
+		android:gravity="center"
+		android:text="Restore Default"
+		/>
+-->
+</RelativeLayout>
+
