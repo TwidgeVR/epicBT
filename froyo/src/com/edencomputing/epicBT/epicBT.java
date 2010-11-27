@@ -357,6 +357,7 @@ public class epicBT extends Activity
 		for (String command : commands )
 		{
 			os.writeBytes(command +"\n");
+			os.flush();
 		}
 		os.writeBytes("exit\n");
 		os.flush();
